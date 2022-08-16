@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x = parseFloat(prompt("Nhap so: "));
+      var a = Math.sqrt(x);
+      var b = Math.pow(x, 2);
+      var c = Math.round(x);
+      
+      if (isNaN(x) == false) {
+        alert(
+          x +
+            " la so" +
+            "\n can bac 2 = " +
+            a +
+            "\n binh phuong = " +
+            b +
+            "\n lam tron: " +
+            c
+        );
+      } else {
+        alert(x + " khong phai so");
+      }
+    </script>
+  </body>
+</html>

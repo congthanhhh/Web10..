@@ -1,0 +1,167 @@
+:root{
+    --color-red: rgb(236, 55, 88);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0;
+}
+/* ===========phan header============= */
+header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;    
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.logo>img{
+    width: 100px;
+    height: 60px;
+    margin: 8px 0  0 25px;
+}
+.search{
+   
+    /* display: flex; */
+    position: absolute;
+    left: 228px;
+}
+.cart {
+    position: absolute;
+}
+.search-item{
+    /* border: none;
+    outline: none; */
+    padding-left: 15px;
+    background-color: #F2F2F2;
+    height: 40px;
+    
+}
+.header-nav-list{
+    /* position: absolute;
+    right: 0; */
+    font-size: 1.1rem;
+    list-style: none;
+    padding-right: 20px;
+}
+.header-nav-item{
+    display: inline-block;
+    /* padding: 10px; */
+    padding-top: 20px;
+}
+.header-nav-link{
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+   
+}
+.header-nav-link:hover{
+    color: var(--color-red);
+}
+.dangky{
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-red);
+    cursor: pointer;
+    padding: 4px 15px; 
+    font-size: 1.1rem;
+    margin-left: 5px;
+    transition: opacity .2s ease;
+}
+.dangky:hover{
+    opacity: 0.8;
+}
+/* ===========phan article============ */
+.wrbody{
+    margin: 0 20px 0 20px;
+}
+article{
+    width: 82%;
+    height: 800px;
+    float: right;
+    border: 1px solid rgb(248, 133, 133);
+
+}
+iframe{
+    width: 100%;
+    height: 800px;
+}
+/* ----------menu ngang---------- */
+.menu-ngang{
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.1rem;
+    background-color: rgb(236, 55, 88);
+    color: #fff;
+    font-variant: small-caps;   
+}
+.menu-ngang a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+}
+.menu-ngang a:hover{
+    opacity: 0.8;
+}
+/* ===========phan aside============== */
+aside{
+    width: 17%;
+    height: 290px;
+    float: left;
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+    
+    
+}
+/* ---------menu trai----------*/
+.menu-trai{
+    list-style: none;
+    
+}
+.danhmuc{
+    padding: 20px 0 20px 20px;
+    color: rgb(236, 55, 88);
+    
+}
+.danhmuc i{
+    position: relative;
+    bottom: 2px;
+    font-size: 12px;
+}
+.menu-trai>li>a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; 
+    font-size: 1.1rem;
+    color: rgb(236, 55, 88);
+    position: relative;
+    transition: right linear 0.1s;
+    right: 0;
+}
+.menu-trai>li>a:hover{
+    color: #fff;
+    background-color: rgb(236, 55, 88);
+    right: -4px;
+    margin-right: 4px;
+}
+
+/* ===========phan footer============= */
+footer{
+    clear: both;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    border-top: 12px solid rgb(236, 55, 88);
+    justify-content: space-between;
+    box-sizing: border-box;   
+}

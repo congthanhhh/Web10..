@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script>
+       var app=angular.module('myApp', []);
+      app.controller('dieukhien',function($scope){
+          $scope.ten= "chua co ten";
+          $scope.tuoi= "1";
+      });
+     </script>
+  </head>
+  <body ng-app="myApp" ng-controller="dieukhien">
+    <input type="text" ng-model="ten"/> 
+    <input type="text" ng-model="tuoi"/>
+    xin chao ban {{ten}}
+    <p>ban <span ng-bind="tuoi"> </span> tuoi</p>
+  </body>
+</html>

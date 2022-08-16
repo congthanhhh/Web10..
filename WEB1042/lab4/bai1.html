@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        function giai(){
+            var b2 = new Object();
+            b2.a=Number(prompt("Nhap a:"));
+            b2.b=Number(prompt("Nhap b:"));
+            b2.c=Number(prompt("Nhap c:"));
+            b2.delta=Number(Math.pow(b2.b,2)-4*b2.a*b2.c);
+            b2.giaiptb2=function(){
+                if(b2.delta<0){
+                    alert("phuong trinh vo nghiem")
+                }else if(b2.delta==0){
+                    alert("phuong trinh co nghiem kep: "+ -b2.b/2*b2.a);
+                }else{
+                    var x1=(-b2.b+Math.sqrt(b2.delta))/(2*b2.a);
+                    var x2=(-b2.b-Math.sqrt(b2.delta))/(2*b2.a); 
+                    alert("phuong trinh co 2 nghiem phan biet x1 = "+x1 +" x2 = "+x2);
+                }
+            }
+            b2.giaiptb2();
+        }
+    </script>
+    <button onclick="giai()">Giải</button>
+</body>
+</html>

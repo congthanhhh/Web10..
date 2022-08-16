@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 4</title>
+</head>
+<body>
+    <script>
+        var a;
+        function mo(){
+           a= window.open("https://www.google.com/");
+        }
+        function dong(){
+          a.close();
+        }
+        function kiemtra(){
+            if(a.closed){
+                alert("da dong cua so");
+            }else{
+                alert("da mo cua so")
+            }
+        }
+    </script>
+    <button onclick="mo()">Mở cửa sổ</button>
+    <button onclick="dong()">Đóng cửa sổ</button>
+    <button onclick="kiemtra()">Kiển tra</button>
+</body>
+</html>

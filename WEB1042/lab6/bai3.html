@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>eee</title>
+    <script>
+        function kiem_tra(){
+            var sanpham=document.getElementById("san_pham");
+            if(sanpham.value.length==0){
+                alert("ban chua chon san pham");
+            }
+            var dongia=document.getElementById("don_gia");
+            if(isNaN(dongia.value)){
+                alert("ban chua nhap don gia");
+                return false;
+            }else if(parseFloat(dongia.value)<=0){
+                alert("don gia phai la so duong");
+                return false;
+            }
+            var loai = document.getElementById("loai");
+            if(loai.value.length==0){
+                alert("ban chua chon loai hang");
+            }
+             
+            alert("chuc mung ban da nhap dung");
+            return true;
+
+        }
+        function hien_thi(visible){
+        var phi_vc = document.getElementById("phi_vc");
+        phi_vc.style.display = visible ? "" : "none";
+}
+    </script>
+</head>
+<body>
+    <h2>ĐẶT HÀNG</h2>
+    <form onsubmit="return kiem_tra()">
+        <p>
+            <label>Sản phẩm</label>
+            <input id="san_pham"/>
+        </p>
+        <p>
+            <label>Loại</label>
+            <select id="loai">
+                <option></option>
+                <option value="DT">Điện thoại</option>
+                <option value="MT">Máy tính</option>
+            </select>
+        </p>
+        <p>
+            <label>Đơn giá</label>
+            <input id="don_gia" />
+        </p>
+        <p>
+            <label>Nơi nhận hàng</label>
+            <input type="radio" name="dia_chi" onclick="hien_thi(false)" />Nội thành
+            <input type="radio" name="dia_chi" onclick="hien_thi(true)" />Ngoại thành
+        </p>
+        <p id="phi_vc" style="display:none">
+            <label>Phí vận chuyển</label>
+            <input value="100000" readonly />
+        </p>
+        <hr />
+        <button>Đặt mua</button>
+    </form>
+</body>
+</html>

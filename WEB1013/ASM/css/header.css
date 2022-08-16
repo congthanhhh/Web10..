@@ -1,0 +1,230 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    height: 80px;
+    background-color: #ffffff;
+
+/* thanh cuon */
+    /* display: flex; */
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+.logo>img{
+    margin-left: 25px;
+    margin-top: 9px;
+    width: 120px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav-list{
+    list-style: none;
+   
+}
+.header-nav-item>.header-nav-link{
+    margin:0px 10px;
+}
+.header-nav-item>.dangnhap,.dangky{
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(197, 0, 35);
+    cursor: pointer;
+    padding: 4px 15px; 
+    margin: 0px 10px;
+    margin-right: 10px;
+    transition: opacity .2s ease;
+}
+/* hover */
+.header-nav-item>.dangnhap:hover,.dangky:hover{
+    opacity: 0.8;
+    
+}
+.header-nav-item>.header-nav-link:hover{
+    color:rgb(197, 0, 35);
+}
+/*  */
+.header-nav-item,.header-nav-link,.dangnhap,.dangky{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1f1f1f;
+    
+}
+.header-nav>.search{                  
+    height: 40px;
+    flex: 1;
+    margin-left: 130px;
+    margin-top: 15px;
+    border-radius: 3px;
+    
+}
+.header-nav>.search>.input-search{
+    width: 100%;
+    height: 100%; 
+    border: none; 
+    outline: none;
+    padding: 0 16px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+.header-nav>.cart{ 
+    margin-top: 10px;
+    margin-left: 80px;
+    box-sizing: border-box;
+}
+.header-nav>.cart>i:hover{
+    color: rgb(197, 0, 35);
+    
+    cursor: pointer;
+}
+.header-nav>.cart>i {
+    margin-top: 8px;
+    color: #1f1f1f;
+    font-size: 25px;
+}
+
+.search-icon{
+    position: relative;
+    left: -15px;
+    margin-top: 18px;
+    border: none;
+    height: 31px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+}
+.search-icon>i{
+    color: rgb(197, 0, 35);
+    font-size: 22px;
+}
+.search-icon>i:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* Khung san pham sale */
+
+
+
+
+.khung-sale{
+    width: 97.5%;
+    background-color: #000;
+   
+    height: 500px;
+    margin-bottom: 32px;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px 0 rgb(17 17 17 / 40%);
+    border-radius: 4px;
+    border: 20px solid #fff;
+    box-sizing: border-box;
+    margin-top: 50px;
+    
+
+}
+
+
+.nhan-tieude{
+    position: absolute;
+    top: -70px;
+    width: 300px ;
+    height: 40px;
+    /* right: 250px; */
+    background-color: rgb(197, 0, 35);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 55%);
+    font-size: 20px;
+        
+}
+.nhan-tieude-cuon1>i{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 10px 0 rgb(17 17 17 / 40%);
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1;
+    top: 45%;
+}
+.nhan-tieude-cuon2>i{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 10px 0 rgb(17 17 17 / 40%);
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1;
+    right: 5px;
+    top: 45%;
+}
+.nhan-tieude-cuon1>i:hover,.nhan-tieude-cuon2 i:hover{
+    background-color: rgb(197, 0, 35);
+    height: 45px;
+    width: 45px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.hang-sanpham-sale{
+    display: inline-flex;
+
+    max-width: 97.5%;
+}
+.hang-sanpham-sale>.sanpham-item{
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 404px;
+    width: 260px;
+    /* ================== */
+    max-width: 22%;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* --------------------------- */
+.menu-ngang-page{
+    margin-top: 82px;
+}
+
+/*   nut like ---------------------------- */
+.nut-like{
+    background-color: #fff;
+}
+
+
+/* ----------------------Responsive--------------------------------------------------- */
+
+
+
+
+
+

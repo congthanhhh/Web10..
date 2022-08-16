@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>fpt</title>
+  </head>
+
+  <body>
+    <form>
+      <div class="form-1">
+        <label>Họ và tên</label> <br />
+        <input type="text" class="form-c" />
+      </div>
+      <div class="form-1">
+        <fieldset class="form-c">
+          <legend>Giới tính</legend>
+          <label><input type="radio" name="gender" />Nam</label>
+          <label><input type="radio" name="gender" />Nữ</label>
+        </fieldset>
+      </div>
+      <div class="form-1">
+        <label>Ngày sinh</label> <br />
+        <input type="date" class="form-c" />
+      </div>
+      <div class="form-1">
+        <label>Điểm</label> <br />
+        <input type="number" min="0" max="10" step="0.25" class="form-c" />
+      </div>
+      <div class="form-1">
+        <label>Nghề nhiệp</label> <br />
+        <input list="job" class="form-c" />
+        <datalist id="job">
+          <option value="Cầu thủ"></option>
+          <option value="Bác sĩ"></option>
+          <option value="Công nhân"></option>
+          <option value="Diễn viên"></option>
+          <option value="Đầu bếp"></option>
+        </datalist>
+      </div>
+      <div class="form-1">
+        <fieldset class="form-c">
+          <legend>Sở thích</legend>
+          <label><input type="checkbox" />Thể thao</label>
+          <label><input type="checkbox" />Du lịch</label>
+          <label><input type="checkbox" />Âm nhạc</label>
+          <label><input type="checkbox" />Ẩm thực</label>
+        </fieldset>
+      </div>
+      <div class="form-1">
+        <label>Ghi chú</label> <br />
+        <textarea name="" id="" cols="30" rows="4" class="form-c"></textarea>
+      </div>
+      <hr />
+      <div class="form-1">
+        <button>Đăng ký</button>
+        <button>Nhập lại</button>
+      </div>
+    </form>
+  </body>
+</html>

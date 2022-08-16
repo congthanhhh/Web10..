@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        setTimeout(function(){
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var s = now.getSeconds()
+            document.write(h+":"+m+":"+s);
+            location.reload();
+        }, 1000);
+    </script> -->
+    <script>
+        function thoigian(){
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var s = now.getSeconds()
+            // document.write(h+":"+m+":"+s);
+            document.getElementById("abc").innerHTML=h+":"+m+":"+s
+            setTimeout("thoigian()",1000);
+        }
+    </script>
+    <input type="button" value="ok" onclick="thoigian()">
+    <h1 id="abc"></h1>
+
+</body>
+</html>

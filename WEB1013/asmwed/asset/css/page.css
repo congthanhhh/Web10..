@@ -1,0 +1,106 @@
+
+/* ==========login/logout============= */
+.khung-dangnhap{
+    width: 100%;
+    height: 713px;
+    background-color: #2C3338;
+    box-sizing: border-box;
+}
+.dangnhap{
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #2C3338;
+    margin-left: 37%;
+    margin-top: 10%;
+}
+.dangnhap>h2{
+    color: #fff;
+}
+.dangnhap>input{
+    width: 325px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #3B4148;
+    transition: opacity .4s ease;
+    border: none;
+}
+.dangnhap>input:focus{
+    opacity: 0.8;
+}
+.dangnhap>button{
+    width: 325px;
+    height: 50px;
+    
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(197, 0, 35);
+    color: #fff;
+    transition: opacity .2s ease;
+}
+.dangnhap>button:hover{
+    opacity: 0.8;
+}
+
+.dangnhap-hoi{
+    margin-left: 630px;
+    color: #576D75;
+    box-sizing: border-box;
+} 
+/* ============sanpham================ */
+.col-25 {
+    width: 25%;
+    float: left;
+}
+
+.prod {
+    /* border-radius: 10px; */
+    box-shadow: 0 0 5px gray;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.prod>.name {
+    font-variant: small-caps;
+    color: orangered;
+}
+
+.prod>.images {
+    max-width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.prod>.price {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: orange;
+}
+
+.prod>.icons {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 25px;
+}
+
+.prod>.icons>img {
+    width: 25px;
+}
+
+.prod>.new-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+}

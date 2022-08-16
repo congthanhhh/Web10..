@@ -1,0 +1,25 @@
+
+ .menu {
+    padding: 0px;
+    margin: 5px;
+    border-radius: 3px;
+    list-style: none;
+    box-shadow: 0 0 2px gray;
+    float: left;
+}
+ .menu a{
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: large;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+}
+.menu a:hover{
+    font-weight: bold;
+    border-bottom: 1px dotted white;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}

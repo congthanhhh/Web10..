@@ -1,0 +1,82 @@
+.group-1>header{
+    border: 0px solid red;
+    height: 300px;
+    position: relative;
+    
+}
+.info{
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 0 0 5px green;
+}
+.info>h1{
+    padding: 0px;
+    margin: 0 px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+}
+.info>strong{
+    border-top: 1px dotted white;
+    font-size: large;
+    letter-spacing: 3px;
+}
+.top-menu{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-bottom-left-radius: 30px;
+    padding: 0 10px 0 30px;
+    box-shadow: 0 0 20px white;
+    line-height: 30px;
+    background-color: orangered;
+    color: aqua;
+}
+.top-menu>a{
+    text-decoration: none;
+    color: aqua;
+    font-variant: small-caps;
+}
+.top-menu>a:hover{
+    color: yellow;
+}
+.group-1>header>img{
+    height: 100%;
+    width: 100%;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    /* margin: 10px; */
+
+}
+.group-1>.na-1{
+    line-height: 40px;
+    background-color: orange;
+    color: white;
+    font-variant: small-caps;
+}
+.group-1>.na-1>a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
+.group-1>.na-2{
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    line-height: 40px;
+    margin: 10px;
+    
+}
+.group-1>.na-2>a{
+    font-variant: small-caps;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.group-1>nav>a:hover{
+    color: red;
+}

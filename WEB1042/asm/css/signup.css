@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+form{
+  width: 450px;
+  /* height: 555px; */
+  border: 1px solid gray;
+  /* height: 300px; */
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 10px;
+  background-color: rgb(204 247 255);
+  box-shadow: 0px 0px 80px lightslategrey;
+}
+/* :focus {
+  background-color: rgb(244, 244, 173);
+} */
+button:hover{
+  background-color: rgb(0, 217, 255);
+}
+.form-a input{
+  width: 375px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  
+}
+.form-b{
+  padding-right: 112px;
+  padding-bottom: 10px;
+}
+.form-b label{
+  padding: 10px;
+}
+.form-c .sothich{
+  padding-right: 314px;
+}
+.form-c .sothich-item{
+  border: 1px solid gray;
+  margin: 0 36px 0 36px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.form-c .sothich-item label{
+  padding: 2px;
+}
+#qt{
+  width: 375px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#ghichu{
+  padding: 10px;
+  width: 375px;
+  margin: 10px 0 6px;
+  border-radius: 5px;
+}
+button{
+  width: 200px;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgb(16, 188, 218);
+  border: none;
+  outline: none;
+}
+
+#form1 #baoloi{
+  color: red;
+}
+#form1 .loi {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: 1px solid red; 
+  background-color: rgb(237, 237, 145);  
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fpt</title>
+    <style>
+        body {
+            border: 2px solid gray;
+            width: 350px;
+        }
+        
+        .f2 {
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="from" method="post" enctype="multipart/form-data">
+        <div class="form-1">
+            <label for="">Họ và tên</label> <br>
+            <input type="text" class="f2">
+        </div> <br>
+        <div class="form-1">
+            <label for="">Giới tính</label> <br>
+            <label for=""><input type="radio" name="gender" checked>Nam</label>
+            <label for=""><input type="radio" name="gender">Nữ</label>
+
+        </div> <br>
+        <div class="form-1">
+            <label for="">Hình ảnh</label> <br>
+            <input type="file">
+        </div> <br>
+        <div class="form-1">
+            <label for="">Quốc tịch</label> <br>
+            <select class="f2">
+                <option value="">Việt Nam</option>
+                <option value="">United State</option>
+            </select>
+        </div> <br>
+        <div class="form-1">
+            <label for="">Sở thích</label> <br>
+            <label><input type="checkbox">Thể thao</label>
+            <label><input type="checkbox"checked>Du lịch</label>
+            <label><input type="checkbox">Âm nhạc</label>
+            <label><input type="checkbox">Ẩm thực</label>
+        </div> <br>
+        <div class="form-1">
+            <label>Ghi chú:</label> <br>
+            <textarea class="f2" cols="30" rows="4"></textarea>
+        </div>
+
+        <hr>
+        <label>
+        <button>Đăng ký</button>
+        <button>Đăng nhập</button>
+    </label>
+    </form>
+</body>
+
+</html>

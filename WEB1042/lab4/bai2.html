@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sv = new Object();
+        sv.ten = prompt("Nhap ten:");
+        sv.diem = prompt("Nhap diem:");
+
+        sv.hienthi = function(){
+            if(this.diem>=5){
+                alert("hoten: "+sv.ten+"\ndiem: "+sv.diem+ " dau");
+            }else{
+                alert("hoten: "+sv.ten+" \ndiem: "+sv.diem+ " rot");
+            }
+        }
+        sv.hienthi();
+    </script>
+</body>
+</html>

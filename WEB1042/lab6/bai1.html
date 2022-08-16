@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>bai1</title>
+        <style>
+            img{
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body onload="naphinh()">
+        <script>
+            var h1=new Image();
+            var h2=new Image();
+            function naphinh(){
+                h1.src="../asm/img/one1.jpg"
+                h2.src="../asm/img/one2.jpg"
+            }
+            function xuly(x){
+                
+                document.one.src=(x)?h1.src:h2.src;
+            }
+        </script>
+       <img name="one" src="../asm/img/one1.jpg" onmouseover="xuly(true)" onmouseout="xuly(false)">
+    </body>
+</html>

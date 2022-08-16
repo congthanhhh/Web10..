@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Sign up</title>
+
+    <script>
+        function kiemtra(){
+            var loi = "";
+            // kiem tra masv
+            var msv = document.getElementById("msv");
+            if(msv.value==""){
+                msv.className="loi";
+                loi += "Mã sinh viên không được bỏ trống <br> "
+            }else{
+                msv.className="txt";
+            }
+            // kiem tra ho ten
+            var ten=document.getElementById("ten");
+            if(ten.value==""){
+                ten.className="loi"
+                loi += "Họ tên không được để trống <br>"
+            }else{
+                ten.className="txt";
+            }
+            // kiem tra email
+            var email=document.getElementById("email")
+            if(email.value==""){
+                email.className="loi"
+                loi+="Email không được để trống <br>"
+            }else{
+                email.className="txt"
+            }
+            // kiem tra gioi tinh
+            var count=0;
+            var arr_phai=document.getElementsByName("gt");
+            for(var i=0;i<arr_phai.length;i++){
+                if(arr_phai[i].checked == true) 
+                count++;
+            }
+            if(count==0){
+                document.getElementById("fs1").className="loi";
+                loi+="Phải chọn giới tính <br>"
+            }else{
+                document.getElementById("fs1").className="";
+            }
+            // kiem tra so thich
+            arr_st=document.getElementsByName("hobbies");
+            for(var i=0;i<arr_st.length;i++){
+                if(arr_st[i].checked)
+                count++;
+            }if(count==0){
+                document.getElementById("fs2").className="loi";
+                loi+="chọn ít nhất 1 sở thích <br>"
+            }else{
+                document.getElementById("fs2").className="";
+            }
+            // kiem tra quoc tich
+            var qt = document.getElementById("qt");
+            if(qt.value==0){
+                qt.className="loi";
+                loi+="Phải chọn quôc tịch";
+            }else{
+                qt.className="txt";
+            }
+            // kiem tra ghi chu
+            var gc=document.getElementById("ghichu");
+            if(gc.value>200){
+                gc.className="loi";
+                loi+="Ghi chú phải ít hơn 200 ký tự";
+            }else{
+                gc.className="txt";
+            }
+            //tra ve gia tri kiem tra
+            if (loi!=""){
+                document.getElementById('baoloi').innerHTML=loi
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" onsubmit="return kiemtra()">  
+        <h2 style="padding: 20px 0 30px 0;">ĐĂNG KÝ THÀNH VIÊN</h2>
+        <div class="form-a">
+            <input id="msv"  class="txt" type="text" placeholder="Mã sinh viên">
+            <input id="ten"  class="txt" type="text" placeholder="Họ tên" >
+            <input id="email"class="txt" type="email" placeholder="Email">
+        </div>
+        <div class="form-b" id="fs1">
+            <label>Giới tính:</label>
+            <label><input type="radio" value="0" name="gt">Nam</label>
+            <label><input type="radio" value="1" name="gt">Nữ</label>
+            <label><input type="radio" value="2" name="gt">Khác</label>
+        </div>
+        <div class="form-c" id="fs2" style="padding-bottom: 10px;">
+            <label class="sothich">Sở thích</label> <br>
+            <div class="sothich-item">
+                <label><input name="hobbies" value="0" type="checkbox">Đọc sách</label>
+                <label><input name="hobbies" value="1" type="checkbox">Du lịch</label>
+                <label><input name="hobbies" value="2" type="checkbox">Âm nhạc</label>
+                <label><input name="hobbies" value="3" type="checkbox">Ẩm thực</label>
+                <label><input name="hobbies" value="4" type="checkbox">Khác</label>
+            </div>
+        </div>
+        <select name="qt" id="qt">
+            <option value="0">Chọn quốc tịch</option>
+            <option value="1">Vietnamese</option>
+            <option value="2">English</option>
+            <option value="3">Japanese</option>
+            <option value="4">Khác</option>
+        </select>
+
+        <textarea class="txt" id="ghichu" cols="30" rows="4" placeholder="Ghi chú"></textarea>
+        <div id="baoloi"></div>
+        <button >Đăng ký</button>
+
+    </form>
+</body>
+</html>

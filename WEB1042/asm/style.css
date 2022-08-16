@@ -1,0 +1,14 @@
+.splide{
+    width: 1000px;
+    margin: 40px auto;
+}
+.splide__track{
+    height: 650px;
+    border-radius: 10px;
+    
+} 
+ img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}

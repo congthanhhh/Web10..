@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function xuly(){
+            var ho = document.getElementById("ho");
+            if(ho.value.length == 0){
+                alert("chua nhap ho");
+                return false;
+            }
+            var ten = document.getElementById("ten");
+            if(ten.value.length == 0){
+                alert("chua nhap ten");
+                return false;
+            }
+            var date = document.getElementById("date");
+            if(date.value==0){
+                alert("chua chon ngay");
+                return false;
+            }
+            var gioitinh = document.getElementsByName("gt");
+            
+            if(!gioitinh[0].checked && !gioitinh[1].checked){
+                alert("chua chon gioi tinh");
+            }
+            var sdt=document.getElementById("sdt");
+            if(sdt.value.length<10||sdt.value.length>11){
+                alert("sdt phai tu 10 den 11 chu so")
+            }
+            var count=0;
+            var sothich = document.getElementsByName("hobbies");
+            for (var i = 0; i < sothich.length; i++) {
+                if(sothich[i].checked){
+                    count++;
+                }
+            }
+            if(count<1){
+                alert("chon it nhat 1 so  thich");
+            }
+            
+           
+        }
+        function hienthi(){
+            var x=document.getElementsByName("hobbies")
+            if(x[4].checked==true){
+                document.getElementById("orther_hobbies").style.display="";
+            }else{
+                document.getElementById("orther_hobbies").style.display="none";
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="xuly()">
+        <p>
+            <label>Ho</label>
+            <input type="text" id="ho">
+        </p>
+        <p>
+            <label>Ten</label>
+            <input type="text" id="ten">
+        </p>
+        <p>
+            <label for="">Ngay sinh</label>
+            <input type="date" id="date">
+        </p>
+        <p>
+            <label for="">Gioi tinh</label>
+            <label><input type="radio" name="gt">Nam</label>
+            <label><input type="radio" name="gt">Nu</label>
+        </p>
+        <p>
+            <label for="">So dien thoai</label>
+            <input type="text"  id="sdt">
+        </p>
+        <p>
+            <label for="">Sothich</label>
+            <label><input type="checkbox" name="hobbies" value="0">Doc sach</label>
+            <label><input type="checkbox" name="hobbies" value="1">Xem phim</label>
+            <label><input type="checkbox" name="hobbies" value="2">Nghe nhac</label>
+            <label><input type="checkbox" name="hobbies" value="3">Da bong</label>
+            <label><input type="checkbox" name="hobbies" value="4" onclick="hienthi()">Khac</label>
+        </p>
+        <p id="orther_hobbies" style="display: none;" >
+            <label for="">So thich khac</label>
+            <input type="text" name="" id="">
+        </p>
+        <hr>
+        <button>Dang ky</button>
+    </form>
+</body>
+
+</html>
+ <!-- for(var i=0;i<gioitinh.length;i++){
+         if(gioitinh[i].checked==false)
+         alert("chua chon gioi tinh")
+     }
+
+     else{
+        var x= "ho: "+document.getElementById("ho").value+"\nten: "+document.getElementById("ten").value;
+        alert(x);
+        return true;
+    } -->

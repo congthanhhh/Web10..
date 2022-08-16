@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>bai1</title>
+        <style>
+            img{
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body onload="naphinh()">
+        <script>
+            var h1=[];
+            var indexhientai=0;
+            function naphinh(){
+                for(var i = 0; i < 6; i++){
+                    h1[i]=new Image();
+                    h1[i].src="../asm/img/one"+(i+1)+".jpg"
+                }
+                // h1[0].src="../asm/img/one1.jpg"
+                // h2[1].src="../asm/img/one2.jpg"
+            }
+            function xuly1(){
+                indexhientai--;
+                if(indexhientai<0){
+                    indexhientai=h1.length-1;
+                }
+                document.one.src=h1[indexhientai].src;
+                document.getElementById("tt").innerHTML=(indexhientai+1)+"/"+h1.length;
+            }
+            function xuly2(){
+                indexhientai++;
+                if(indexhientai>=h1.length){
+                    indexhientai=0;
+                }
+                document.one.src=h1[indexhientai].src;
+                document.getElementById("tt").innerHTML=(indexhientai+1)+"/"+h1.length;
+
+            }
+            function xuly3(){
+                indexhientai=0;
+                document.one.src=h1[indexhientai].src;
+                document.getElementById("tt").innerHTML=(indexhientai+1)+"/"+h1.length;
+
+            }
+            function xuly4(){
+                indexhientai=h1.length -1;
+                document.one.src=h1[indexhientai].src;
+                document.getElementById("tt").innerHTML=(indexhientai+1)+"/"+h1.length;
+
+            }
+        </script>
+
+       <img name="one" src="../asm/img/one1.jpg">
+       <button onclick="xuly1()">pre</button>
+       <button onclick="xuly2()">next</button>
+       <button onclick="xuly3()">frist</button>
+       <button onclick="xuly4()">last</button>
+       <p id="tt"></p>
+    </body>
+</html>
